@@ -131,9 +131,10 @@ class AppRepositoryImpl @Inject constructor(
     override fun addContactToApi(contactData: ContactData): Flow<Result<Boolean>> = flow{
         val response = api.addContact(
             AddContactRequest(
+                id = contactData.id,
                 firstName = contactData.firstName,
                 lastName = contactData.firstName,
-                phoneNumber = contactData.phoneNumber
+                phone = contactData.phoneNumber
             )
         )
 
@@ -148,9 +149,10 @@ class AppRepositoryImpl @Inject constructor(
     override fun updateContactToApi(contactData: ContactData): Flow<Result<Boolean>> = flow{
         val response = api.updateContact(
             AddContactRequest(
+                id = contactData.id,
                 firstName = contactData.firstName,
                 lastName = contactData.firstName,
-                phoneNumber = contactData.phoneNumber
+                phone = contactData.phoneNumber
             )
         )
 

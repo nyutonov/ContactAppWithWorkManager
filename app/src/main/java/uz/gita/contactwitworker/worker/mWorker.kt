@@ -2,25 +2,29 @@ package uz.gita.contactwitworker.worker
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.util.Log
+import androidx.hilt.work.HiltWorker
 import androidx.work.Worker
 import androidx.work.WorkerParameters
+import dagger.assisted.Assisted
+import dagger.assisted.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uz.gita.contactwitworker.domain.usecase.AddContactToApiUseCase
 import uz.gita.contactwitworker.domain.usecase.DeleteContactFromApiUseCase
-import uz.gita.contactwitworker.domain.usecase.GetContactsFromDBUseCase
 import uz.gita.contactwitworker.domain.usecase.GetDeletedContactsUseCase
+import uz.gita.contactwitworker.domain.usecase.GetNotUploadedContactsUseCase
 import uz.gita.contactwitworker.domain.usecase.GetUpdatedContactsUseCase
 import uz.gita.contactwitworker.domain.usecase.UpdateContactToApiUseCase
 import uz.gita.contactwitworker.notification.NotificationHelper
-import javax.inject.Inject
 
-class Worker @Inject constructor(
-    context: Context,
-    params: WorkerParameters,
-    private val getContactsFromDBUseCase: GetContactsFromDBUseCase,
+@HiltWorker
+class mWorker @AssistedInject constructor(
+    @Assisted context: Context,
+    @Assisted params: WorkerParameters,
+    private val getNotUploadedContactsUseCase: GetNotUploadedContactsUseCase,
     private val getUpdatedContactsUseCase: GetUpdatedContactsUseCase,
     private val getDeletedContactsUseCase: GetDeletedContactsUseCase,
     private val addContactToApi: AddContactToApiUseCase,
@@ -34,7 +38,8 @@ class Worker @Inject constructor(
 
     @SuppressLint("MissingPermission")
     override fun doWork(): Result {
-        getContactsFromDBUseCase.invoke()
+        Log.d("TTT" , "work")
+        getNotUploadedContactsUseCase.invoke()
             .onEach {
                 it.onSuccess {
                     it.forEach {

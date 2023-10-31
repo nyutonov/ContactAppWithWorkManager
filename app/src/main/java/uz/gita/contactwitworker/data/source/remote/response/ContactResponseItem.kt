@@ -3,8 +3,8 @@ package uz.gita.contactwitworker.data.source.remote.response
 import uz.gita.contactwitworker.domain.model.ContactData
 
 data class ContactResponseItem(
-    val firstName: String,
     val id: Int,
+    val firstName: String,
     val lastName: String,
     val phone: String
 ){

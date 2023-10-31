@@ -11,7 +11,7 @@ data class ContactEntity(
     val firstName: String,
     val lastName: String,
     val phoneNumber: String,
-    var isAddedToApi: Boolean = false,
+    var isAddedToApi: Boolean = true,
     var isUpdated: Boolean = false,
     var isDeleted: Boolean = false
 ){

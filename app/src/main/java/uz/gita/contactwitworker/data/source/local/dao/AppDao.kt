@@ -26,7 +26,7 @@ interface AppDao {
     @Query("select * from contact where isDeleted = 1")
     fun getDeletedContacts(): Flow<List<ContactEntity>>
 
-    @Query("select * from contact where isUpdated = 0")
+    @Query("select * from contact where isUpdated = 1")
     fun getUpdatedContacts(): Flow<List<ContactEntity>>
 
     @Query("select * from contact where isDeleted = 0")
