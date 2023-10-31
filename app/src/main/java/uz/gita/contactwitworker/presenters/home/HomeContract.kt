@@ -25,5 +25,6 @@ interface HomeContract {
     interface Intent {
         object MoveToAdd : Intent
         data class MoveToEdit(val contactData: ContactData) : Intent
+        data class Delete(val contactData: ContactData) : Intent
     }
 }

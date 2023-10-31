@@ -39,6 +39,10 @@ class HomeViewModelImpl @Inject constructor(
                     direction.moveToEdit(intent.contactData)
                 }
             }
+
+            is HomeContract.Intent.Delete -> {
+                deleteContactsToDatabaseUseCase.invoke(intent.contactData)
+            }
         }
     }
 

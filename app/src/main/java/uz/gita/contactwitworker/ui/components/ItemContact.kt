@@ -1,6 +1,7 @@
 package uz.gita.contactwitworker.ui.components
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,6 +20,8 @@ import uz.gita.contactwitworker.domain.model.ContactData
 @Composable
 fun ItemContact(
     contactData: ContactData,
+    onClickEdit: () -> Unit,
+    onClickDelete: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -40,12 +43,15 @@ fun ItemContact(
                     painter = painterResource(id = R.drawable.delete), contentDescription = "",
                     modifier = Modifier
                         .size(40.dp)
+                        .clickable { onClickDelete.invoke() }
 
                 )
                 Image(
                     painter = painterResource(id = R.drawable.pencil),
                     contentDescription = "",
-                    modifier = Modifier.size(40.dp)
+                    modifier = Modifier
+                        .size(40.dp)
+                        .clickable { onClickEdit.invoke() }
                 )
             }
         }

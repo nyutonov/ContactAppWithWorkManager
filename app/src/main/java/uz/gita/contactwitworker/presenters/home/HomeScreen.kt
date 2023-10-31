@@ -30,12 +30,13 @@ class HomeScreen : AndroidScreen() {
         Box(modifier = Modifier.fillMaxSize()) {
             LazyColumn() {
                 items(uiState.value.list){
-                    ItemContact(contactData = it)
+                    ItemContact(
+                        contactData = it,
+                        { onEventDispatcher.invoke(HomeContract.Intent.MoveToEdit(it)) },
+                        { onEventDispatcher.invoke(HomeContract.Intent.Delete(it)) }
+                    )
                 }
             }
         }
     }
 }
-
-
-
