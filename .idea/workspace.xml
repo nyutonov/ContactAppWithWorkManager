@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbb7f58-fcc1-4d8f-91ef-bb0e60afc384" name="Changes" comment="init 14:31">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeViewModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeViewModelImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/components/ItemContact.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/components/ItemContact.kt" afterDir="false" />
+    <list default="true" id="5dbb7f58-fcc1-4d8f-91ef-bb0e60afc384" name="Changes" comment="init 15:44">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/ContactWitWorker.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +47,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shahr/Desktop/ContactWitWorker&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/shahr/Desktop/Android/DrinkWater"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="ContactWitWorker.app.main" />
@@ -143,12 +141,20 @@
       <option name="project" value="LOCAL" />
       <updated>1698743782992</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init 15:44">
+      <created>1698749097545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698749097545</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="init 14:31" />
-    <option name="LAST_COMMIT_MESSAGE" value="init 14:31" />
+    <MESSAGE value="init 15:44" />
+    <option name="LAST_COMMIT_MESSAGE" value="init 15:44" />
   </component>
 </project>
