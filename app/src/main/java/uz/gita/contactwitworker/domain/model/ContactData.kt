@@ -1,4 +1,4 @@
-package uz.gita.contactwitworker.data.model
+package uz.gita.contactwitworker.domain.model
 
 import uz.gita.contactwitworker.data.source.local.entites.ContactEntity
 

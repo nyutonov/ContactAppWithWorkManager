@@ -26,41 +26,40 @@ import uz.gita.contactwitworker.domain.usecase.impl.GetNotUploadedContactsUseCas
 import uz.gita.contactwitworker.domain.usecase.impl.GetUpdatedContactsUseCaseImpl
 import uz.gita.contactwitworker.domain.usecase.impl.UpdateContactToApiUseCaseImpl
 import uz.gita.contactwitworker.domain.usecase.impl.UpdateContactsToDatabaseUseCaseImpl
-import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
 interface UseCaseModule {
-    @[Binds Singleton]
-    fun bindAddContactsToDatabaseUseCase(impl: AddContactsToDatabaseUseCase): AddContactsToDatabaseUseCaseImpl
+    @[Binds]
+    fun bindAddContactsToDatabaseUseCase(impl: AddContactsToDatabaseUseCaseImpl): AddContactsToDatabaseUseCase
 
-    @[Binds Singleton]
-    fun bindDeleteContactFromApiUseCase(impl: DeleteContactFromApiUseCase): DeleteContactFromApiUseCaseImpl
+    @[Binds]
+    fun bindDeleteContactFromApiUseCase(impl: DeleteContactFromApiUseCaseImpl): DeleteContactFromApiUseCase
 
-    @[Binds Singleton]
-    fun bindAddContactToApiUseCase(impl: AddContactToApiUseCase): AddContactToApiUseCaseImpl
+    @[Binds]
+    fun bindAddContactToApiUseCase(impl: AddContactToApiUseCaseImpl): AddContactToApiUseCase
 
-    @[Binds Singleton]
-    fun bindDeleteContactsToDatabaseUseCase(impl: DeleteContactsToDatabaseUseCase): DeleteContactsToDatabaseUseCaseImpl
+    @[Binds]
+    fun bindDeleteContactsToDatabaseUseCase(impl: DeleteContactsToDatabaseUseCaseImpl): DeleteContactsToDatabaseUseCase
 
-    @[Binds Singleton]
-    fun bindGetContactsFromApiUseCse(impl: GetContactsFromApiUseCse): GetContactsFromApiUseCseImpl
+    @[Binds]
+    fun bindGetContactsFromApiUseCse(impl: GetContactsFromApiUseCseImpl): GetContactsFromApiUseCse
 
-    @[Binds Singleton]
-    fun bindGetContactsFromDBUseCase(impl: GetContactsFromDBUseCase): GetContactsFromDBUseCaseImpl
+    @[Binds]
+    fun bindGetContactsFromDBUseCase(impl: GetContactsFromDBUseCaseImpl): GetContactsFromDBUseCase
 
-    @[Binds Singleton]
-    fun bindUpdateToApiContactUseCase(impl: GetDeletedContactsUseCase): GetDeletedContactsUseCaseImpl
+    @[Binds]
+    fun bindGetDeletedContactUseCase(impl: GetDeletedContactsUseCaseImpl): GetDeletedContactsUseCase
 
-    @[Binds Singleton]
-    fun bindGetNotUploadedContactsUseCase(impl: GetNotUploadedContactsUseCase): GetNotUploadedContactsUseCaseImpl
+    @[Binds]
+    fun bindGetNotUploadedContactsUseCase(impl: GetNotUploadedContactsUseCaseImpl): GetNotUploadedContactsUseCase
 
-    @[Binds Singleton]
-    fun bindGetUpdatedContactsUseCase(impl: GetUpdatedContactsUseCase): GetUpdatedContactsUseCaseImpl
+    @[Binds]
+    fun bindGetUpdatedContactsUseCase(impl: GetUpdatedContactsUseCaseImpl): GetUpdatedContactsUseCase
 
-    @[Binds Singleton]
-    fun bindUpdateContactsToDatabaseUseCase(impl: UpdateContactsToDatabaseUseCase): UpdateContactsToDatabaseUseCaseImpl
+    @[Binds]
+    fun bindUpdateContactsToDatabaseUseCase(impl: UpdateContactsToDatabaseUseCaseImpl): UpdateContactsToDatabaseUseCase
 
-    @[Binds Singleton]
-    fun bindUpdateToApiContactUseCase(impl: UpdateContactToApiUseCase): UpdateContactToApiUseCaseImpl
+    @[Binds]
+    fun bindUpdateToApiContactUseCase(impl: UpdateContactToApiUseCaseImpl): UpdateContactToApiUseCase
 }

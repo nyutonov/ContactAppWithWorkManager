@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.onEach
-import uz.gita.contactwitworker.data.model.ContactData
+import uz.gita.contactwitworker.domain.model.ContactData
 import uz.gita.contactwitworker.data.source.local.dao.AppDao
 import uz.gita.contactwitworker.data.source.local.entites.ContactEntity
 import uz.gita.contactwitworker.data.source.local.shared.Shared
@@ -24,6 +24,7 @@ class AppRepositoryImpl @Inject constructor(
     private val api: AppApi,
 ) : AppRepository {
     override fun addContact(
+        id: Int,
         firstName: String,
         lastName: String,
         phoneNumber: String,
@@ -177,9 +178,15 @@ class AppRepositoryImpl @Inject constructor(
 
         if (response.isSuccessful && response.body() != null) {
             response.body().let {
-                emit(Result.success(
-                    it?.map { it.toData() }?: listOf()
-                ))
+                it?.forEach{
+                    dao.insertContacts(it.toData().toEntity())
+                }
+                emit(
+                    Result.success(
+                        it?.map { it.toData() } ?: listOf()
+                    )
+                )
+
             }
         }else emit(Result.failure(Exception("Occurs something unknown")))
 

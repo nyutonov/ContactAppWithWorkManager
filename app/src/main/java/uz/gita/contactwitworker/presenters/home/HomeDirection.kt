@@ -1,25 +1,21 @@
 package uz.gita.contactwitworker.presenters.home
 
-import uz.gita.contactwitworker.data.model.ContactData
-import uz.gita.contactwitworker.presenters.add.AddScreen
 import uz.gita.contactwitworker.presenters.edit.EditScreen
+import uz.gita.contactwitworker.domain.model.ContactData
+import uz.gita.contactwitworker.presenters.add.AddScreen
 import uz.gita.contactwitworker.utils.navigation.AppNavigator
+import javax.inject.Inject
+import javax.inject.Singleton
 
-interface HomeDirection {
-    suspend fun moveToAdd()
-    suspend fun moveToEdit(contactData: ContactData)
-}
-
-class HomeDirectionImpl(
-    private val direction: AppNavigator,
-) : HomeDirection {
-
+@Singleton
+class HomeDirection @Inject constructor (
+    private val appNavigator: AppNavigator
+) : HomeContract.Direction {
     override suspend fun moveToAdd() {
-        direction.addScreen(AddScreen())
+        appNavigator.addScreen(AddScreen())
     }
 
     override suspend fun moveToEdit(contactData: ContactData) {
-        direction.addScreen(EditScreen(contactData))
+        appNavigator.addScreen(EditScreen(contactData))
     }
-
 }

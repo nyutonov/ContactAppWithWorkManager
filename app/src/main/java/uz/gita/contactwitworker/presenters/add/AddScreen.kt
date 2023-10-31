@@ -20,10 +20,10 @@ import uz.gita.contactwitworker.data.source.remote.requests.AddContactRequest
 class AddScreen : AndroidScreen() {
     @Composable
     override fun Content() {
-        val viewModel: AddContract.AddViewModel = getViewModel<AddViewModelImp>()
+        val viewModel: AddContract.ViewModel = getViewModel<AddViewModelImp>()
 
         AddScreenContent(
-            viewModel::onEventDispatcher
+            viewModel::eventDispatcher
         )
     }
 
@@ -32,7 +32,6 @@ class AddScreen : AndroidScreen() {
     @Composable
     fun AddScreenContent(
         onEventDispatcher: (AddContract.Intent) -> Unit = {},
-
         ) {
 
         var firstName by remember { mutableStateOf("") }
@@ -56,16 +55,23 @@ class AddScreen : AndroidScreen() {
 
                 Button(onClick = {
                     onEventDispatcher.invoke(
-                        AddContract.Intent.AddContact(
-                            AddContactRequest(
+                        AddContract.Intent
+                            .AddContact(
                                 firstName,
                                 lastName,
                                 phone
                             )
-                        )
                     )
                 }) {
                     Text(text = "save")
+                }
+
+                Button(onClick = {
+                    onEventDispatcher.invoke(
+                        AddContract.Intent.Cancel
+                    )
+                }) {
+                    Text(text = "Cancel")
                 }
             }
         }

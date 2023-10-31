@@ -19,73 +19,72 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import cafe.adriel.voyager.androidx.AndroidScreen
 import cafe.adriel.voyager.hilt.getViewModel
-import uz.gita.contactwitworker.data.model.ContactData
+import uz.gita.contactwitworker.domain.model.ContactData
 import uz.gita.contactwitworker.data.source.remote.requests.AddContactRequest
 
 class EditScreen(private val contactData: ContactData) : AndroidScreen() {
     @Composable
     override fun Content() {
-        val viewModel: EditContract.EditViewModel = getViewModel<EditViewModelImpl>()
+        val viewModel: EditContract.ViewModel = getViewModel<EditViewModelImpl>()
 
         EditScreenContent(
-            uiState = viewModel.uiState.collectAsState(),
-            viewModel::onEventDispatcher,
+            viewModel::eventDispatcher,
             contactData
         )
     }
-}
 
 
-@SuppressLint("UnrememberedMutableState")
-@Composable
-@Preview(showBackground = true)
-fun EditScreenContentPrev() {
-//    EditScreenContent(mutableStateOf(EditContract.UIState()))
-}
+    @OptIn(ExperimentalMaterial3Api::class)
+    @Composable
+    fun EditScreenContent(
+        onEventDispatcher: (EditContract.Intent) -> Unit,
+        contactData: ContactData
+    ) {
+
+        var firstName by remember { mutableStateOf(contactData.firstName) }
+        var lastName by remember { mutableStateOf(contactData.lastName) }
+        var phone by remember { mutableStateOf(contactData.phoneNumber) }
+
+        Box(modifier = Modifier.fillMaxSize()) {
 
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun EditScreenContent(
-    uiState: State<EditContract.UIState>,
-    onEventDispatcher: (EditContract.Intent) -> Unit,
-    contactData: ContactData
-) {
+            Column(modifier = Modifier.fillMaxSize()) {
 
-    var firstName by remember { mutableStateOf(contactData.firstName) }
-    var lastName by remember { mutableStateOf(contactData.lastName) }
-    var phone by remember { mutableStateOf(contactData.phoneNumber) }
+                TextField(value = firstName, onValueChange = {
+                    firstName = it
+                })
+                TextField(value = lastName, onValueChange = {
+                    lastName = it
+                })
+                TextField(value = phone, onValueChange = {
+                    phone = it
+                })
 
-    Box(modifier = Modifier.fillMaxSize()) {
-
-
-        Column(modifier = Modifier.fillMaxSize()) {
-
-            TextField(value = firstName, onValueChange = {
-                firstName = it
-            })
-            TextField(value = lastName, onValueChange = {
-                lastName = it
-            })
-            TextField(value = phone, onValueChange = {
-                phone = it
-            })
-
-            Button(onClick = {
-                onEventDispatcher.invoke(
-                    EditContract.Intent.SaveAndBack(
-                        ContactData(
+                Button(onClick = {
+                    onEventDispatcher.invoke(
+                        EditContract.Intent.Edit(
                             contactData.id,
                             firstName,
                             lastName,
-                            phone,
-                            false
+                            phone
                         )
                     )
-                )
-            }) {
-                Text(text = "edit")
+                }) {
+                    Text(text = "edit")
+                }
+
+                Button(onClick = {
+                    onEventDispatcher.invoke(
+                        EditContract.Intent.Cancel
+                    )
+                }) {
+                    Text(text = "Cancel")
+                }
             }
         }
     }
 }
+
+
+
+

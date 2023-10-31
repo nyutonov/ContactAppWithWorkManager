@@ -1,6 +1,6 @@
 package uz.gita.contactwitworker.data.source.remote.response
 
-import uz.gita.contactwitworker.data.model.ContactData
+import uz.gita.contactwitworker.domain.model.ContactData
 
 data class ContactResponseItem(
     val firstName: String,

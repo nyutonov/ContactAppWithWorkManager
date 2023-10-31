@@ -10,122 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dbb7f58-fcc1-4d8f-91ef-bb0e60afc384" name="Changes" comment="init 14:31">
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.0/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/uz/gita/contactwitworker/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/app/App.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/model/ContactData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/repository/AppRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/Database.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/dao/AppDao.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/entites/ContactEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/shared/Shared.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/AppApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/requests/AddContactRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/response/ContactResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/response/ContactResponseItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/response/DeleteResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/di/AppRepositoryModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/di/DatabaseModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/di/NavigationModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/di/NetworkModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/di/SharedModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/di/UseCaseModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/repository/AppRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/AddContactToApiUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/AddContactsToDatabaseUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/DeleteContactFromApiUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/DeleteContactsToDatabaseUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/GetContactsFromApiUseCse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/GetContactsFromDBUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/GetDeletedContactsUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/GetNotUploadedContactsUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/GetUpdatedContactsUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/UpdateContactToApiUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/UpdateContactsToDatabaseUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/AddContactToApiUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/AddContactsToDatabaseUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/DeleteContactFromApiUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/DeleteContactsToDatabaseUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/GetContactsFromApiUseCseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/GetContactsFromDBUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/GetDeletedContactsUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/GetNotUploadedContactsUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/GetUpdatedContactsUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/UpdateContactToApiUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/domain/usecase/impl/UpdateContactsToDatabaseUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/add/AddContract.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/add/AddDirection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/add/AddScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/add/AddViewModelImp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/edit/EditContract.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/edit/EditDirection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/edit/EditScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/edit/EditViewModelImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeContract.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeDirection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeViewModelImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/components/ItemContact.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/utils/navigation/AppNavigationDispatcher.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/utils/navigation/AppNavigationHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/utils/navigation/AppNavigator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/worker/Worker.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pencil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/uz/gita/contactwitworker/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\shahr\.android\avd\Nexus_5X_API_32.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[22c568243a057ece]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -143,6 +43,9 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -151,15 +54,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shahr/Desktop/ContactWitWorker&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/shahr/Desktop/ContactWitWorker"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="ContactWitWorker.app.main" />

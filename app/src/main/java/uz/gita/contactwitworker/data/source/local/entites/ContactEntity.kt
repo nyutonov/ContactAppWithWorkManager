@@ -2,7 +2,7 @@ package uz.gita.contactwitworker.data.source.local.entites
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import uz.gita.contactwitworker.data.model.ContactData
+import uz.gita.contactwitworker.domain.model.ContactData
 
 @Entity("contact")
 data class ContactEntity(

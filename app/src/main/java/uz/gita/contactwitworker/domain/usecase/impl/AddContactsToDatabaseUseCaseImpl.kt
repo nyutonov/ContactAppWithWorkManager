@@ -14,6 +14,7 @@ class AddContactsToDatabaseUseCaseImpl @Inject constructor(
         phoneNumber: String,
     ): Flow<Result<Boolean>> = appRepository
         .addContact(
+            0,
             firstName,
             lastName,
             phoneNumber

@@ -1,22 +1,14 @@
 package uz.gita.contactwitworker.presenters.add
 
-import uz.gita.contactwitworker.presenters.home.HomeScreen
 import uz.gita.contactwitworker.utils.navigation.AppNavigator
+import javax.inject.Inject
+import javax.inject.Singleton
 
-interface AddDirection {
-    suspend fun back()
-    suspend fun addAndBack()
-}
-
-class AddDirectionImpl(
-    private val direction: AppNavigator,
-) : AddDirection {
-    override suspend fun back() {
-        direction.back()
+@Singleton
+class AddDirection @Inject constructor(
+    private val appNavigator: AppNavigator,
+) : AddContract.Direction {
+    override suspend fun backToMain() {
+        appNavigator.back()
     }
-
-    override suspend fun addAndBack() {
-        direction.addScreen(HomeScreen())
-    }
-
 }
