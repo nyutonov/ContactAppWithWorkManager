@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbb7f58-fcc1-4d8f-91ef-bb0e60afc384" name="Changes" comment="init 15: 44">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
+    <list default="true" id="5dbb7f58-fcc1-4d8f-91ef-bb0e60afc384" name="Changes" comment="init 17: 54">
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
@@ -18,18 +17,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/app/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/app/App.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/repository/AppRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/repository/AppRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/dao/AppDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/dao/AppDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/entites/ContactEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/local/entites/ContactEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/requests/AddContactRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/requests/AddContactRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/response/ContactResponseItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/data/source/remote/response/ContactResponseItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/components/ItemContact.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/ui/components/ItemContact.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/worker/Worker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/worker/mWorker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/add/AddScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/add/AddScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/edit/EditScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/edit/EditScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeViewModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/uz/gita/contactwitworker/presenters/home/HomeViewModelImpl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698749097545</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init 17: 54">
+      <created>1698756890084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698756890084</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +190,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="init 14:31" />
     <MESSAGE value="init 15:44" />
-    <option name="LAST_COMMIT_MESSAGE" value="init 15:44" />
+    <MESSAGE value="init 17: 54" />
+    <option name="LAST_COMMIT_MESSAGE" value="init 17: 54" />
   </component>
 </project>

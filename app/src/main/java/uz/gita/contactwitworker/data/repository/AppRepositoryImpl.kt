@@ -1,5 +1,6 @@
 package uz.gita.contactwitworker.data.repository
 
+import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -48,6 +49,7 @@ class AppRepositoryImpl @Inject constructor(
 
     override fun deleteContact(contactData: ContactData): Flow<Result<Boolean>> = flow{
         dao.updateContacts(contactData.toEntity().copy(isDeleted = true))
+        Log.d("TAG", "deleteContact: ${contactData.toEntity().copy(isDeleted = true)}")
         emit(Result.success(true))
 
     }.catch { emit(Result.failure(it)) }
@@ -65,11 +67,21 @@ class AppRepositoryImpl @Inject constructor(
                 firstName,
                 lastName,
                 phoneNumber,
-                isAddedToApi = false,
+                isAddedToApi = true,
                 isDeleted = false,
-                isUpdated = false
+                isUpdated = true
             )
         )
+
+        Log.d("TAG", "deleteContact: ${ContactEntity(
+            id,
+            firstName,
+            lastName,
+            phoneNumber,
+            isAddedToApi = true,
+            isDeleted = false,
+            isUpdated = true
+        )}")
 
         emit(Result.success(true))
     }

@@ -41,7 +41,9 @@ class HomeViewModelImpl @Inject constructor(
             }
 
             is HomeContract.Intent.Delete -> {
-                deleteContactsToDatabaseUseCase.invoke(intent.contactData)
+                deleteContactsToDatabaseUseCase.invoke(intent.contactData).onEach {
+                    it.onSuccess {  }
+                }.launchIn(viewModelScope)
             }
         }
     }
